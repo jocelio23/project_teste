@@ -1,6 +1,5 @@
 <?php
 
-
 include_once('../BD/config.php');
 $sql = "SELECT MAX(in_user) FROM test_users";
 

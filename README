@@ -1,4 +1,23 @@
-#Criar banco de dados
+
+#RECOMENDAÇÕES PARA RODAR APLICAÇÃO
+
+#BAIXAR PROGRAMA "LARAGON" , IRÁ FACILITAR NA HORA DE RODAR A APLICAÇÃO E CRIAR BANCO DE DADOS
+
+#NO PHP INSTALADO EM SEU COMPUTADOR  ABRA O ARQUIVO PHP.INI
+#DESCOMENTAR A LINHA ";EXTENSION=MYSQLI";
+
+Inicar Apache e Mysql no laragon
+> opção "iniciar tudo"
+
+#Criar banco de dados atraves do laragon->
+abrir laragon ->
+> opção "base de dados"
+
+OBS: Dentro da pasta BD deste projeto tem um arquivo chamado "config.php".
+Verifique sua configuração de usuário e senha, modifique no arquivo se for necessário.
+
+> opção "abrir"
+Na aba "consulta" -> inserir sql abaixo
 
 create database cad;
 
@@ -15,3 +34,9 @@ CREATE TABLE `test_users` (
 COLLATE='utf8mb4_unicode_ci'
 ENGINE=InnoDB
 ;
+
+
+#RECOMENDAÇÕES nº 2
+#No "seu vscode" instale a extensão "php server", irá ajudar a rodar a aplicação no navegador
+Após instalar a extensão
+> Clicar com botão direito em cima do arquivo index.php e clicar em "php server:server project"

@@ -1,5 +1,7 @@
 <?php
 include_once('../DAO/pegaId.php');
+
+unset($_SESSION['msg']);
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -9,7 +11,7 @@ include_once('../DAO/pegaId.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/style.css">
 </head>
 
 <body>
@@ -18,6 +20,7 @@ include_once('../DAO/pegaId.php');
             <p>Digite os dados para Cadastro nos campos abaixo</p>
 
             <a href="index.php">Retornar</a>
+    
             <input type="text" name="nome" placeholder="Digite o nome" autofocus="true" required />
             <input type="email" name="email" placeholder="Digite seu e-mail" autofocus="true" required />
 

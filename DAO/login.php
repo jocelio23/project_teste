@@ -1,6 +1,5 @@
 <?php
 
-/* var_dump($_REQUEST['email'], $_REQUEST['senha']); */
 session_start();
 
 if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])){
@@ -24,7 +23,6 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
         $_SESSION['senha'] = $senha;
 
         header('Location: ../view/painel.php');
-
     }
 }else{
     header('Location:../view/index.php');
