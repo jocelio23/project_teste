@@ -1,0 +1,17 @@
+#Criar banco de dados
+
+create database cad;
+
+use cad;
+
+CREATE TABLE `test_users` (
+	in_user INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name_user VARCHAR(30) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	email_user VARCHAR(40) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	password_user VARCHAR(128) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	title_user VARCHAR(74) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	code_user VARCHAR(40) NOT NULL COLLATE 'utf8mb4_unicode_ci'
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB
+;
